@@ -1,0 +1,21 @@
+/* h1 {
+  color: red;
+}
+
+a {
+  color: blue;
+} */
+
+body {
+  /* Căn giữa tất cả nội dung bên trong body */
+  display: flex;
+  flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+  align-items: center;    Căn giữa theo chiều ngang
+  padding-left: 0;        /* Không cần padding-left nữa */
+}
+
+.make_highlight {
+  color: red;
+  border: 1px solid yellow;
+  background-color: yellow;
+}
