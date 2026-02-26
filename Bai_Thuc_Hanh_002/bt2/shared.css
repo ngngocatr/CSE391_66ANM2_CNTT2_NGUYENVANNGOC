@@ -1,0 +1,70 @@
+/* --- CÀI ĐẶT CHUNG --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: #5bb3a8; /* Màu nền xanh cho header */
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-logo a {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.5rem;
+  color: #f7e39c; /* Màu vàng nhạt */
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  font-family: 'Raleway', sans-serif;
+  color: #fce79a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffffff;
+}
+z
+/* --- FOOTER --- */
+footer {
+  background-color: #2b2b2b; /* Nền tối để hiện rõ icon trắng */
+  padding: 30px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}

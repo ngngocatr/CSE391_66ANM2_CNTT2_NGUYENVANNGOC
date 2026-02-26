@@ -1,0 +1,106 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Sử dụng font Monospace để giống hình mẫu */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Style cho tiêu đề lớn ở trên cùng */
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+/* Layout flexbox chứa 2 cột */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Căn hàng bắt đầu từ trên xuống */
+    gap: 60px; /* Khoảng cách giữa 2 cột */
+}
+
+/* --- CỘT TRÁI: CARD --- */
+.card {
+    flex: 0 0 35%; /* Chiếm khoảng 35% chiều rộng container */
+    background-color: #fff;
+    padding: 40px;
+    /* Tạo bóng đổ (box-shadow) để làm nổi bật card */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); 
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #000000; /* Màu chữ xám nhạt */
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.author strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.job-title {
+    font-size: 12px;
+    color: #5d93c9; /* Màu xanh dương nhạt cho chức vụ */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- CỘT PHẢI: TEXT CONTENT --- */
+.text-content {
+    flex: 1; /* Chiếm phần còn lại của không gian */
+}
+
+.text-content p {
+    margin-bottom: 30px; /* Khoảng cách giữa các đoạn văn */
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Class riêng cho đoạn văn in đậm ở giữa */
+.highlight-text {
+    font-weight: bold;
+    color: #222 !important; /* Màu đen đậm hơn */
+}
+
+/* --- RESPONSIVE (Cho màn hình điện thoại) --- */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Chuyển thành hàng dọc trên mobile */
+    }
+    
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

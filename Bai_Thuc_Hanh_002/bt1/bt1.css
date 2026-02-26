@@ -1,0 +1,88 @@
+/* Reset CSS cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Đổi nền thành màu trắng và giữ một chút padding để form không dính sát mép mép trình duyệt */
+body {
+    padding: 40px;
+    background-color: #ffffff; 
+}
+
+/* Form container giờ đã tràn màn hình và không còn viền */
+.form-container {
+    width: 100%; /* Tràn toàn bộ chiều rộng khả dụng */
+}
+
+.form-container h2 {
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Khoảng cách giữa các dòng */
+.form-row {
+    margin-bottom: 15px;
+}
+
+/* --- ÁP DỤNG FLEXBOX CHO DÒNG 1 (NAME & EMAIL) --- */
+.flex-row {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa 2 ô input */
+}
+
+.flex-row input {
+    flex: 1; /* Yêu cầu các ô input chia đều khoảng trống */
+}
+
+/* Định dạng chung cho input và textarea */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Viền xám nhạt cho từng ô nhập liệu */
+    border-radius: 2px;
+    font-size: 14px;
+    outline: none; /* Bỏ viền xanh khi click vào */
+}
+
+input:focus, textarea:focus {
+    border-color: #999;
+}
+
+textarea {
+    resize: vertical; /* Chỉ cho phép kéo giãn chiều dọc */
+}
+
+/* --- ÁP DỤNG FLEXBOX CHO FOOTER --- */
+.form-footer {
+    display: flex;
+    justify-content: space-between; /* Đẩy 2 phần tử ra 2 đầu (trái - phải) */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 5px;
+}
+
+/* Nút Submit */
+button {
+    background-color: #156fa3; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5bbff7;
+}
+
+/* Đoạn text chú thích */
+.note-text {
+    color: #888;
+    font-size: 15px;
+}

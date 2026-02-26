@@ -1,0 +1,94 @@
+/* --- HERO SECTION --- */
+#hero {
+  /* Bạn có thể thay đổi link ảnh ocean.jpg ở đây nếu cần */
+  background-image: url('./assets/cities-page-2/ocean.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(51, 51, 51, 0.85);
+  padding: 50px 80px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+#hero-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#hero-content a {
+  background-color: #ffce00;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+#hero-content a:hover {
+  background-color: #e6b800;
+}
+
+/* --- HIGHLIGHTS SECTION --- */
+#highlights {
+  background-color: #dcf5f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#highlights h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #4a5c5a;
+  margin-bottom: 40px;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.destination {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination p {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #1d1f1e;
+  text-transform: uppercase;
+}
+
+.destination strong {
+  color: #333;
+}
