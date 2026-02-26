@@ -53,7 +53,7 @@ nav ul li a.active {
 z
 /* --- FOOTER --- */
 footer {
-  background-color: #2b2b2b; /* Nền tối để hiện rõ icon trắng */
+  background-color: #2b2b2b; /* Tô nền đen xám để làm nổi icon trắng */
   padding: 30px 0;
 }
 
@@ -64,6 +64,7 @@ footer ul {
   gap: 30px;
 }
 
+/* Ép kích thước icon nhỏ lại */
 footer img {
   width: 40px;
   height: 40px;
