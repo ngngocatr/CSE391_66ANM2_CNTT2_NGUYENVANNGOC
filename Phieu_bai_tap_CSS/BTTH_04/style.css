@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+
+}
+
+.card {
+    /* Loại bỏ margin và inline-block */
+    /* width: calc(33.33% - 20px);  <-- Có thể bỏ vì flex đã quản lý */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    
+    /* Sử dụng flex-basis để chia đều 3 cột, trừ đi khoảng trống của gap */
+    flex: 0 0 calc((100% / 3) - (40px / 3)); 
+}
+
+.btn {
+    
+        display: inline-block;
+        padding: 8px 16px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+    
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#main-header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-link{
+    color: #333;
+    text-decoration: none;
+    margin: 10px 15px;
+}
+
+h1, h2, h3{
+    font-family: 'Georgia', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+ 
+}
+
+a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a:hover{
+    color: #ff6600;
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+.item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    /* Mặc định cho Mobile: 1 cột */
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 16px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cho Tablet (từ 600px trở lên): 2 cột */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Cho Desktop (từ 1024px trở lên): 3 cột */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* TODO: Thêm box-shadow để tạo hiệu ứng nổi */
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;   
+}
+
+.scroll-top:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+
+}
+
+.card {
+    /* Loại bỏ margin và inline-block */
+    /* width: calc(33.33% - 20px);  <-- Có thể bỏ vì flex đã quản lý */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    
+    /* Sử dụng flex-basis để chia đều 3 cột, trừ đi khoảng trống của gap */
+    flex: 0 0 calc((100% / 3) - (40px / 3)); 
+}
+
+.btn {
+    
+        display: inline-block;
+        padding: 8px 16px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+    
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#main-header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-link{
+    color: #333;
+    text-decoration: none;
+    margin: 10px 15px;
+}
+
+h1, h2, h3{
+    font-family: 'Georgia', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+ 
+}
+
+a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a:hover{
+    color: #ff6600;
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+    }
+}
