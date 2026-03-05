@@ -1,5 +1,5 @@
 
-## 👨‍🎓 Thông tin sinh viên
+## Thông tin sinh viên
 
 - Họ và tên: **Nguyễn Văn Ngọc**  
 - Mã sinh viên: **2451271145**  
