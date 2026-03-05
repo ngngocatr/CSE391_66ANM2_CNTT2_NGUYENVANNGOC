@@ -70,7 +70,7 @@ console.log("Hello from JavaScript!");
 
 > Câu hỏi:
 > - Em thấy dòng thông báo nào trong console?\
-<img src="../../images/2026-03-05-22-19-25.png" style="display: block; margin: 0 auto;">
+<img src="../images/2026-03-05-22-19-25.png" style="display: block; margin: 0 auto;">
 --> Em thấy được trong tab Console có hiện thông báo `Hello from JavaScript!` 
 
 > - Điều này cho em biết JavaScript đang làm gì khi trang web được tải?\
