@@ -1,0 +1,26 @@
+/* CSS */
+.form-group { margin-bottom: 15px; }
+.error-msg { color: red; font-size: 0.8em; display: block; margin-top: 5px; height: 15px; }
+input.invalid { border: 1px solid red; }
+#successMessage { padding: 20px; background: #e8f5e9; color: #2e7d32; border-radius: 8px; text-align: center; }
+
+/* Container cho mật khẩu để đặt nút 👁️ vào trong */
+/* .password-wrapper { position: relative; display: flex; align-items: center; }
+#togglePassword { 
+    position: absolute; right: 10px; background: none; border: none; 
+    cursor: pointer; width: auto; color: #666; 
+} */
+
+/* Thanh sức mạnh mật khẩu */
+.strength-meter { 
+    height: 5px; background-color: #ddd; margin-top: 5px; 
+    border-radius: 3px; overflow: hidden; 
+}
+#strengthBar { height: 100%; width: 0%; transition: 0.3s; }
+
+/* Màu sắc mức độ */
+.weak { width: 33% !important; background-color: #ff4d4d; }
+.medium { width: 66% !important; background-color: #ffcc00; }
+.strong { width: 100% !important; background-color: #2ecc71; }
+
+.char-count { text-align: right; font-size: 0.8em; color: #888; }

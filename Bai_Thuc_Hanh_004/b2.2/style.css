@@ -1,0 +1,53 @@
+/* Tổng quan form */
+body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f9; }
+#orderApp { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+/* Các nhóm nhập liệu */
+.form-group { margin-bottom: 15px; }
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+input[type="text"], input[type="number"], input[type="date"], select, textarea {
+    width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+}
+
+/* --- PHẦN QUAN TRỌNG: DÒNG LỖI MÀU ĐỎ --- */
+.error-msg { 
+    color: #d32f2f; /* Màu đỏ đậm chuyên nghiệp */
+    font-size: 0.85em; 
+    margin-top: 4px; 
+    display: block; 
+    min-height: 1em; 
+    font-weight: 500;
+}
+
+/* Tô đỏ viền ô nhập liệu khi có lỗi */
+.invalid { 
+    border: 1px solid #d32f2f !important; 
+    background-color: #fff8f8; 
+}
+
+/* Tổng tiền */
+.total-display { font-size: 1.2em; color: #1a73e8; font-weight: bold; margin: 15px 0; }
+#totalPrice { color: #d32f2f; }
+
+/* Đếm ký tự */
+#charCount { text-align: right; font-size: 0.8em; color: #666; }
+.over-limit { color: red !important; font-weight: bold; }
+
+/* Modal xác nhận */
+.modal { 
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.6); display: none; /* Mặc định ẩn */
+    align-items: center; justify-content: center; z-index: 1000;
+}
+.modal-content { 
+    background: white; padding: 25px; border-radius: 8px; 
+    width: 350px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+/* Nút bấm */
+button { 
+    background: #28a745; color: white; border: none; padding: 10px 15px; 
+    border-radius: 4px; cursor: pointer; width: 100%; font-size: 1em; 
+}
+button:hover { background: #218838; }
+#btnCancel { background: #6c757d; margin-top: 10px; }

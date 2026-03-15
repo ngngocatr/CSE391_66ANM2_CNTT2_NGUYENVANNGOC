@@ -1,0 +1,11 @@
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+th { background-color: #f4f4f4; }
+.low-score { background-color: #fff176; } /* Màu vàng cho điểm < 5 */
+.summary { margin-top: 15px; font-weight: bold; }
+.input-group { margin-bottom: 10px; }
+
+.filter-group input { padding: 8px; flex: 2; }
+.filter-group select { padding: 8px; flex: 1; }
+#sortScore:hover { background-color: #e0e0e0; }
+.no-result { text-align: center; font-style: italic; color: gray; }
