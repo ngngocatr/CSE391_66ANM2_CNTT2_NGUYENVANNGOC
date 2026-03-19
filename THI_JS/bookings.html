@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Đặt phòng Khách sạn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Quản lý Đặt phòng Khách sạn</h1>
+            <div class="header-actions">
+                <a href="add-booking.html" class="btn btn-outline">Thêm đặt phòng</a>
+                <a href="bookings.html" class="btn btn-primary">Quản lý đặt phòng</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <h2>Danh sách đặt phòng</h2>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Tìm mã đặt phòng hoặc tên khách">
+                <button class="btn btn-secondary" id="btnReload">Tải lại</button>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3 id="statTotal">0</h3>
+                    <p>Tổng booking</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="statEmpty">100</h3>
+                    <p>Phòng trống (ước tính)</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="statRevenue">0</h3>
+                    <p>Doanh thu dự kiến (VNĐ)</p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="bookingTable">
+                    <thead>
+                        <tr>
+                            <th>Mã</th>
+                            <th>Khách</th>
+                            <th>Phone</th>
+                            <th>Loại</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Người lớn/Trẻ em</th>
+                            <th>Promo</th>
+                            <th>Trạng thái</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
