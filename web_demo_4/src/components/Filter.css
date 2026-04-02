@@ -1,0 +1,8 @@
+.filter {
+  margin-bottom: 10px;
+}
+
+.filter input {
+  padding: 5px;
+  width: 200px;
+}

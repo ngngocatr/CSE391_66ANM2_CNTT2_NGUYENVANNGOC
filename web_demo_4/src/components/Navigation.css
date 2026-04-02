@@ -1,0 +1,17 @@
+.navigation {
+  margin-bottom: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navigation a, .navigation button {
+  text-decoration: none;
+  color: blue;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

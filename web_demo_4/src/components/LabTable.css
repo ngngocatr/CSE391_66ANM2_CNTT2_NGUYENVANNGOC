@@ -1,0 +1,19 @@
+.lab-table {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.lab-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lab-table th, .lab-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.lab-table th {
+  background-color: #f2f2f2;
+}
